@@ -2,7 +2,9 @@ import test from 'ava';
 import alfyTest from 'alfy-test';
 import moment from 'moment-timezone';
 
-moment.tz.setDefault('Europe/London');
+test.before(() => {
+	moment.tz.setDefault('Europe/London');
+});
 
 test('should convert given UTC timestamp in seconds', async t => {
 	const alfy = alfyTest();
@@ -27,7 +29,7 @@ test('should convert given UTC timestamp in seconds', async t => {
 
 test('should convert given US-style date string', async t => {
 	const alfy = alfyTest();
-	const result = await alfy('Oct 17 2018 3:03 PM');
+	const result = await alfy('Oct 17 2018 3:03 PM GMT+1');
 
 	t.deepEqual(result, [
 		{
@@ -48,7 +50,7 @@ test('should convert given US-style date string', async t => {
 
 test('should convert given UK-style date string', async t => {
 	const alfy = alfyTest();
-	const result = await alfy('17 Oct 2018 3:03 PM');
+	const result = await alfy('17 Oct 2018 3:03 PM GMT+1');
 
 	t.deepEqual(result, [
 		{
