@@ -1,6 +1,6 @@
 {
   "name": "alfred-epoch",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Alfred workflow for converting epoch timestamps",
   "license": "MIT",
   "repository": "salockhart/alfred-epoch",
