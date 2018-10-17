@@ -34,6 +34,7 @@
   "devDependencies": {
     "alfy-test": "^0.3.0",
     "ava": "^0.18.0",
+    "moment-timezone": "^0.5.21",
     "xo": "^0.17.0"
   }
 }

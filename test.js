@@ -1,5 +1,8 @@
 import test from 'ava';
 import alfyTest from 'alfy-test';
+import moment from 'moment-timezone';
+
+moment.tz.setDefault('Europe/London');
 
 test('should convert given UTC timestamp in seconds', async t => {
 	const alfy = alfyTest();
