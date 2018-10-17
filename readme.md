@@ -14,9 +14,13 @@ $ npm install --global alfred-epoch
 
 ## Usage
 
-In Alfred, type `epoch`, <kbd>Enter</kbd>, and your query.
+In Alfred, type `epoch`, <kbd>Enter</kbd>, and your query. Hit <kbd>Enter</kbd> again to copy to the clipboard.
 
 
 ## License
 
-MIT © [](http://alexlockhart.ca)
+MIT © [Alex Lockhart](http://alexlockhart.ca)
+
+## Icon
+
+Icon courtesy of [Ionicons](https://ionicons.com/)
