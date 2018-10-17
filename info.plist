@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>name</key>
-	<string>epoch</string>
 	<key>bundleid</key>
 	<string>ca.alexlockhart.epoch</string>
 	<key>category</key>
@@ -14,7 +12,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>30303B6D-C6A2-428B-A210-791C41D60CDB</string>
+				<string>644B0122-089D-4D2E-93D2-220EFEA8380D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -24,34 +22,42 @@
 			</dict>
 		</array>
 	</dict>
+	<key>createdby</key>
+	<string>Alex Lockhart</string>
+	<key>description</key>
+	<string>Alfred workflow for converting epoch timestamps</string>
 	<key>disabled</key>
 	<false/>
+	<key>name</key>
+	<string>epoch</string>
 	<key>objects</key>
 	<array>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
 				<string>{query}</string>
-				<key>utf8</key>
-				<true/>
+				<key>transient</key>
+				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
+			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
-			<string>30303B6D-C6A2-428B-A210-791C41D60CDB</string>
+			<string>644B0122-089D-4D2E-93D2-220EFEA8380D</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
@@ -95,10 +101,10 @@
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>30303B6D-C6A2-428B-A210-791C41D60CDB</key>
+		<key>644B0122-089D-4D2E-93D2-220EFEA8380D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>150</integer>
+			<integer>180</integer>
 			<key>ypos</key>
 			<integer>10</integer>
 		</dict>
@@ -110,5 +116,9 @@
 			<integer>10</integer>
 		</dict>
 	</dict>
+	<key>version</key>
+	<string>0.0.0</string>
+	<key>webaddress</key>
+	<string>https://github.com/salockhart/alfred-epoch#readme</string>
 </dict>
 </plist>

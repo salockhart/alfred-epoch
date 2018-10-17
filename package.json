@@ -5,9 +5,9 @@
   "license": "MIT",
   "repository": "salockhart/alfred-epoch",
   "author": {
-    "name": "",
-    "email": "",
-    "url": "alexlockhart.ca"
+    "name": "Alex Lockhart",
+    "email": "salexlockhart@gmail.com",
+    "url": "https://alexlockhart.ca"
   },
   "engines": {
     "node": ">=4"
@@ -28,7 +28,8 @@
     "alfy"
   ],
   "dependencies": {
-    "alfy": "^0.6.0"
+    "alfy": "^0.6.0",
+    "moment": "^2.22.2"
   },
   "devDependencies": {
     "alfy-test": "^0.3.0",
