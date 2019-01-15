@@ -8,7 +8,7 @@ if (isNaN(alfy.input)) {
 	date = new Date(alfy.input);
 } else {
 	date = new Date(0);
-	date.setUTCSeconds(alfy.input);
+	date.setUTCSeconds(alfy.input.slice(0, 10));
 }
 
 const dateString = moment(date).format('LLL');
