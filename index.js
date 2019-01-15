@@ -11,7 +11,7 @@ if (isNaN(alfy.input)) {
 	date.setUTCSeconds(alfy.input.slice(0, 10));
 }
 
-const dateString = moment(date).format('LLL');
+const dateString = moment(date).format('MMMM Do, Y LTS');
 const secondsString = String(moment(date).unix());
 const millisecondsString = String(moment(date).valueOf());
 
