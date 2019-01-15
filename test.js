@@ -3,7 +3,7 @@ import alfyTest from 'alfy-test';
 import moment from 'moment';
 
 const date = moment(new Date(new Date(0).setUTCSeconds(1539784980)));
-const dateString = date.format('LLL');
+const dateString = date.format('MMMM Do, Y LTS');
 const seconds = String(date.unix());
 const milliseconds = String(date.valueOf());
 
@@ -26,6 +26,13 @@ const expected = [
 test('should convert given UTC timestamp in seconds', async t => {
 	const alfy = alfyTest();
 	const result = await alfy('1539784980');
+
+	t.deepEqual(result, expected);
+});
+
+test('should convert given UTC timestamp in milliseconds', async t => {
+	const alfy = alfyTest();
+	const result = await alfy('1539784980000');
 
 	t.deepEqual(result, expected);
 });
